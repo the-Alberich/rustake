@@ -1,0 +1,7 @@
+/.qodo
+/.trunk
+/.vscode
+
+/target
+.env
+.env.example
