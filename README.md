@@ -33,9 +33,9 @@ These are read from your local `.env` file (or system env):
 | `RUSTAKE_DISABLE_ASCII`   | If set, disables the ASCII header banner                |
 | `CONNECT_RETRY_ATTEMPTS`  | Number of retries to attempt when connecting to testnet |
 | `CONNECT_RETRY_DELAY_MS`  | Delay between retry attempts (ms) connecting to testnet |
-| `CONTRACT_ADDRESS`        | 0x<Contract address from testnet deploy.ts output>      |
+| `CONTRACT_ADDRESS`        | 0x`<Contract address from testnet deploy.ts output>`    |
 | `ETH_PROVIDER_URL`        | http://localhost:8545                                   |
-| `INIT_SIGNER_KEY`         | 0x<Test account private key from hardhat node output>   |
+| `INIT_SIGNER_KEY`         | 0x`<Test account private key from hardhat node output>` |
 
 ## TODO
 
