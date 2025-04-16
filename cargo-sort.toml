@@ -1,0 +1,16 @@
+# cargo-sort.toml
+
+# Enables grouping of sections (like dependencies, dev-dependencies, etc.)
+group_dependencies = true
+
+# Enable sorting of keys within each dependency group
+group_imports = true
+
+# Keep empty lines between groups (helps preserve visual grouping)
+separate_groups = true
+
+# Automatically sort features, build-dependencies, etc.
+unstable_features = true
+
+# You can use this if you want to preserve comments and whitespace better
+# skip_comments = false
