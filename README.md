@@ -31,7 +31,6 @@ These are read from your local `.env` file (or system env):
 | `RUSTAKE_LOG`             | Log level (`info`, `debug`, `trace`, etc.)              |
 | `RUSTAKE_TODO`            | If set, prints the TODO list at startup                 |
 | `RUSTAKE_DISABLE_ASCII`   | If set, disables the ASCII header banner                |
-|---------------------------|---------------------------------------------------------|
 | `CONNECT_RETRY_ATTEMPTS`  | Number of retries to attempt when connecting to testnet |
 | `CONNECT_RETRY_DELAY_MS`  | Delay between retry attempts (ms) connecting to testnet |
 | `CONTRACT_ADDRESS`        | 0x<Contract address from testnet deploy.ts output>      |
