@@ -9,12 +9,11 @@ Built with 💙 by a full-stack engineer learning in public.
 
 - 🌐 Axum HTTP API framework
 - 🧠 Modular logic for staking, unstaking, and reward calculation
-- 📦 SQLx integration for PostgreSQL
+- 📦 SQLx integration for PostgreSQL (planned)
 - 🔐 JWT auth (planned)
 - 📊 Prometheus metrics (planned)
 - 📜 Auto-generated OpenAPI docs via Utoipa (planned)
 - 🛠️ Tracing via `tracing` & `tracing-subscriber` with `.env`-configurable log levels
-- 🎨 Startup ASCII header + TODO preview (can be toggled via env vars)
 
 ## Quickstart
 
@@ -27,11 +26,17 @@ cargo run
 
 These are read from your local `.env` file (or system env):
 
-| Variable                 | Purpose                                      |
-|--------------------------|----------------------------------------------|
-| `RUSTAKE_LOG`            | Log level (`info`, `debug`, `trace`, etc.)  |
-| `RUSTAKE_TODO`           | If set, prints the TODO list at startup     |
-| `RUSTAKE_DISABLE_ASCII` | If set, disables the ASCII header banner     |
+| Variable                  | Purpose                                                 |
+|---------------------------|---------------------------------------------------------|
+| `RUSTAKE_LOG`             | Log level (`info`, `debug`, `trace`, etc.)              |
+| `RUSTAKE_TODO`            | If set, prints the TODO list at startup                 |
+| `RUSTAKE_DISABLE_ASCII`   | If set, disables the ASCII header banner                |
+|---------------------------|---------------------------------------------------------|
+| `CONNECT_RETRY_ATTEMPTS`  | Number of retries to attempt when connecting to testnet |
+| `CONNECT_RETRY_DELAY_MS`  | Delay between retry attempts (ms) connecting to testnet |
+| `CONTRACT_ADDRESS`        | 0x<Contract address from testnet deploy.ts output>      |
+| `ETH_PROVIDER_URL`        | http://localhost:8545                                   |
+| `INIT_SIGNER_KEY`         | 0x<Test account private key from hardhat node output>   |
 
 ## TODO
 
